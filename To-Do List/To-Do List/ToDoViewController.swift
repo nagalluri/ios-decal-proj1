@@ -57,7 +57,6 @@ class ToDoViewController: UITableViewController {
         let tempCell = tableView.dequeueReusableCellWithIdentifier("SampleCell") as UITableViewCell!
         let ToDoItem = ToDoItems[indexPath.row]
         
-        // Downcast from UILabel? to UILabel
         let cell = tempCell.textLabel as UILabel!
         cell.text = ToDoItem.itemName
 
@@ -91,8 +90,13 @@ class ToDoViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
         
         let tappedItem = ToDoItems[indexPath.row] as ToDoItem
+        if (tappedItem.completed) {
+            tasksCompleted--
+        } else {
+            tasksCompleted++
+        }
         tappedItem.completed = !tappedItem.completed
-        tasksCompleted++
+        
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
     }
     
@@ -102,7 +106,6 @@ class ToDoViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: (NSIndexPath!)) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
-            // handle delete (by removing the data from your array and updating the tableview)
             if (ToDoItems[indexPath.row].completed) {
                 tasksCompleted--
             }
