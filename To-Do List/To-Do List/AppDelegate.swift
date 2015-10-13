@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var tasksCompleted = 0
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

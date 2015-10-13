@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151188231BCC8F2400193CBB /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151188221BCC8F2400193CBB /* StatsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		15850AAA1BC0470F00857519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15850AA91BC0470F00857519 /* AppDelegate.swift */; };
 		15850AAC1BC0470F00857519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15850AAB1BC0470F00857519 /* ViewController.swift */; };
 		15850AAF1BC0470F00857519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15850AAD1BC0470F00857519 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151188221BCC8F2400193CBB /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		15850AA61BC0470F00857519 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15850AA91BC0470F00857519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15850AAB1BC0470F00857519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				15850ABD1BC8BC9700857519 /* AddToDoViewController.swift */,
 				15850ABF1BC8BFDE00857519 /* NavigationController.swift */,
 				15850AAD1BC0470F00857519 /* Main.storyboard */,
+				151188221BCC8F2400193CBB /* StatsViewController.swift */,
 				15CB651E1BCBA04200830F22 /* ToDoItem.swift */,
 				15850AB01BC0470F00857519 /* Assets.xcassets */,
 				15850AB21BC0470F00857519 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				15850AAC1BC0470F00857519 /* ViewController.swift in Sources */,
 				15CB651F1BCBA04200830F22 /* ToDoItem.swift in Sources */,
 				15850AC01BC8BFDE00857519 /* NavigationController.swift in Sources */,
+				151188231BCC8F2400193CBB /* StatsViewController.swift in Sources */,
 				15850ABC1BC8BBFF00857519 /* ToDoViewController.swift in Sources */,
 				15850AAA1BC0470F00857519 /* AppDelegate.swift in Sources */,
 			);
